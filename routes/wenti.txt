@@ -1,0 +1,2 @@
+500：Connection refused 链接被拒绝
+405： Supported methods 支持的方法
