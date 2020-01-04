@@ -27,7 +27,7 @@ class TestController extends Controller
             'name' => $request->input('name'),
             'email' => $request->input('email'),
             'password' => $password,
-            'last_time' => time(),
+            'last_login' => time(),
             'last_ip' => $request->ip(),//获取用户的登录ip
         ];
         $id = TestModel::insertGetId($data);
