@@ -28,9 +28,46 @@ class TestController extends Controller
             'email' => $request->input('email'),
             'password' => $password,
             'last_login' => time(),
-            'last_ip' => $request->ip(),//获取用户的登录ip
+            'last_ip' => $request->ip(),//获取用户的登录ip()
         ];
         $id = TestModel::insertGetId($data);
         dump($id);
+    }
+   
+    /**周考测试 */
+    public function ascii()
+    {
+        $data =$_GET['data'];
+        $data = "huahua";      
+        $length =strlen($data);
+        echo $length;echo '</br>';
+        $pass = "";
+        for($i=0;$i<$length;$i++)
+        {
+            echo $data[$i] .'>>>'.ord($data[$i]);echo '</br>';
+            // echo $char[$i] .'>>>'.ord($char[$i]);echo '</br>';
+            $ord = ord($data[$i]) + 3;
+            $chr =chr($ord);
+            echo $data[$i].'>>>'.$ord .'>>>'.$chr;echo '</br>';
+            $pass .=$chr;
+        }
+        echo '</br>';
+        echo $pass;
+    }
+    public function dec()
+    {
+             $data =$_GET['data'];
+             $data = "kxdkxd";
+            // $enc ="L#oryh#|rx";
+            echo "密文:".$data;echo '<hr>';
+            $length=strlen($data);
+            $str ="";
+            for($i=0;$i<$length;$i++){
+                $ord = ord($data[$i]) - 3;
+                $chr =chr($ord);
+                echo $ord .'>>>'.$chr;echo '</br>';
+                $str .=$chr;
+            }
+             echo "解文：".$str;
     }
 }

@@ -15,3 +15,6 @@ Route::get('/', function () {
     return view('welcome');
 });
 Route::get('/test/login',"Api\\TestController@login");
+
+Route::any('/test/ascii','Api\TestController@ascii');
+Route::any('/test/dec','Api\TestController@dec');

@@ -81,17 +81,18 @@
 
             <div class="content">
                 <div class="title m-b-md">
-                    Laravel
+                    <h6 style="color:deeppink">爆竹声中一岁除，春风送暖入屠苏</h6>
+                    <h6 style="color:deeppink">千门万户曈曈日，总把新桃换旧符</h6>
                 </div>
 
-                <div class="links">
-                    <a href="https://laravel.com/docs">Docs</a>
+                <div class="links" >
+                    <a href="https://laravel.com/docs" style="color:blue">Docs</a>
                     <a href="https://laracasts.com">Laracasts</a>
-                    <a href="https://laravel-news.com">News</a>
+                    <a href="https://laravel-news.com" style="color:blue">News</a>
                     <a href="https://blog.laravel.com">Blog</a>
-                    <a href="https://nova.laravel.com">Nova</a>
+                    <a href="https://nova.laravel.com" style="color:blue">Nova</a>
                     <a href="https://forge.laravel.com">Forge</a>
-                    <a href="https://vapor.laravel.com">Vapor</a>
+                    <a href="https://vapor.laravel.com" style="color:blue">Vapor</a>
                     <a href="https://github.com/laravel/laravel">GitHub</a>
                 </div>
             </div>
